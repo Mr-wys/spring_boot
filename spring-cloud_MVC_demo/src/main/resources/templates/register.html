@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Register</title>
+</head>
+<body>
+	<h1>注册</h1>
+	<form th:object="${user}" method="post">
+		<label for="userName">用户名: </label>
+		<input type="text" th:field="*{userName}"/>
+		<br/>
+		<br/>
+		<label for="userDescription">描&nbsp;述: </label>
+		<input type="text" th:field="*{userDescription}"/>
+		<br/>
+		<br/>
+		<label for="password">密&nbsp;码: </label>
+		<input type="password" th:field="*{password}"/>
+		<br/>
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"/>
+		&nbsp;<input type="submit"/>
+	</form>
+</body>
+</html>
